@@ -9,3 +9,6 @@
 /.tsbuild/
 .env
 /logs/
+
+# Files to ignore
+lambda_api.log
