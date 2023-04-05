@@ -4,14 +4,25 @@ class HomePage {
     return $(`-ios class chain:${selector}`);
   }
 
-  get proverbialText() {
+  async getProverbialText(): Promise<string> {
     const selector = 'name == "Textbox"';
-    return $(`-ios predicate string:${selector}`);
+    const textBox = await $(`-ios predicate string:${selector}`);
+    await this.textBtn.click();
+    return await textBox.getText();
   }
 
-  async getProverbialText(): Promise<string> {
-    await this.textBtn.click();
-    return await this.proverbialText.getText();
+  get notificationBtn() {
+    return $('~notification');
+  }
+
+  get notification() {
+    const selector = '**/XCUIElementTypeButton[`label == "Notification"`]';
+    return $(`-ios class chain:${selector}`);
+  }
+
+  async isNotificationDisplayed():Promise<boolean> {
+    await this.notificationBtn.click();
+    return await this.notification.isDisplayed();
   }
 }
 
