@@ -3,6 +3,18 @@ class HomePage {
     const selector = '**/XCUIElementTypeButton[`label == "Text"`]';
     return $(`-ios class chain:${selector}`);
   }
+  get notificationBtn() {
+    return $("~notification");
+  }
+
+  get browserMenu() {
+    return $("~Browser");
+  }
+
+  get notification() {
+    const selector = '**/XCUIElementTypeButton[`label == "Notification"`]';
+    return $(`-ios class chain:${selector}`);
+  }
 
   async getProverbialText(): Promise<string> {
     const selector = 'name == "Textbox"';
@@ -11,18 +23,12 @@ class HomePage {
     return await textBox.getText();
   }
 
-  get notificationBtn() {
-    return $('~notification');
-  }
-
-  get notification() {
-    const selector = '**/XCUIElementTypeButton[`label == "Notification"`]';
-    return $(`-ios class chain:${selector}`);
-  }
-
-  async isNotificationDisplayed():Promise<boolean> {
+  async showNotification(): Promise<void> {
     await this.notificationBtn.click();
-    return await this.notification.isDisplayed();
+  }
+
+  async openBrowserMenu(): Promise<void> {
+    await this.browserMenu.click();
   }
 }
 
