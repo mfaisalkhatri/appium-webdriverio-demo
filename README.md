@@ -13,7 +13,7 @@ This project has the example code for running IOS Test Automation using [WebDriv
 ## Scenario covered
 - On the Home page of the app, Click on Text button and verify the title `Proverbial` is displayed correctly.
 - On the Home Page of the app, Click on Notification button and check that the notification is displayed. 
-- Navigate to the Browser menu, enter the url - `https:\\www.lambdatest.com` and click on Find button, once the page is loaded, switch to the web view context and verify the title displayed - `Next-Generation Mobile Apps and Cross Browser Testing Cloud`.
+- Navigate to the Browser menu, verify that the `Find` button is displayed on the page.
 
 ## Running the tests 
 - [NodeJS](https://nodejs.org/en/download/) should be installed on the local machine where tests needs to be run.
