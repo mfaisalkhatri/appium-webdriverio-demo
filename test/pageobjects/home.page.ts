@@ -26,7 +26,7 @@ class HomePage {
   async showNotification(): Promise<void> {
     await this.notificationBtn.click();
   }
-
+  
   async openBrowserMenu(): Promise<void> {
     await this.browserMenu.click();
   }
