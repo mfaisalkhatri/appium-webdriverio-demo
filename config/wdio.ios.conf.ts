@@ -1,4 +1,3 @@
-require("dotenv").config();
 import config from "../config/wdio.server.conf";
 
 // ============
@@ -27,15 +26,5 @@ config.capabilities = [
     },
   },
 ];
-//
-// =====================
-// Server Configurations
-// =====================
-//
-// config.hostname: "mobile-hub.lambdatest.com";
-// config.port = 80;
-// config.path = "/wd/hub";
-// config.user = process.env.LT_USERNAME;
-// config.key = process.env.LT_ACCESS_KEY;
 
 exports.config = config;
