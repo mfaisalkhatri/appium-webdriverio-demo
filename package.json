@@ -1,5 +1,5 @@
 {
-  "name": "wdio-lambdatest-ios-automation",
+  "name": "appium-webdriverio-demo",
   "devDependencies": {
     "@types/mocha": "^10.0.1",
     "@types/node": "^18.15.11",
