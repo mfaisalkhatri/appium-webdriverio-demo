@@ -7,10 +7,11 @@ describe("IOS Mobile automation tests", () => {
   });
 
   it("should check the notification", async () => {
-    expect(await homePage.showNotification()).toBeDisplayedInViewport();
+    await homePage.showNotification();
+    expect(await homePage.notification).toBeDisplayedInViewport();
   });
 
-  it.only("should navigate to the website in mobile and verify the page header", async () => {
+  it("should navigate to the browser menu and check find button", async () => {
     await homePage.openBrowserMenu();
     expect(await browserPage.findBtn).toBeDisplayedInViewport();
   });

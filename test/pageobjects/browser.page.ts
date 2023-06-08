@@ -1,4 +1,5 @@
 class BrowserPage {
+  
   get urlField() {
     return $("~url");
   }
