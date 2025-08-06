@@ -13,8 +13,8 @@ config.capabilities = [
   {
     "LT:Options": {
       platformName: "ios",
-      deviceName: "iPhone 11 Pro",
-      platformVersion: "14",
+      deviceName: "iPhone 13 Pro",
+      platformVersion: "15",
       build: "proverbial ios app latest",
       name: "ios automation tests for proverbial app",
       project: "wdio appium ios automation",
@@ -22,7 +22,7 @@ config.capabilities = [
       autoAcceptAlerts: true,
       isRealMobile: true,
       w3c: true,
-      app: "lt://APP10160531401680591668532103",
+      app: "lt://APP10160572041754484509392451",
     },
   },
 ];
