@@ -1,5 +1,3 @@
-![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
-
 ## Don't forget to give a :star: to make the project popular.
 
 ## :question: What is this Repository about?
@@ -32,4 +30,4 @@ This project has the example code for running IOS Test Automation using [WebDriv
 Contact me for Paid trainings related to Test Automation and Software Testing, 
 mail me @ `mohammadfaisalkhatri@gmail.com` or ping me on [LinkedIn](https://www.linkedin.com/in/faisalkhatri/)
 
-## :thought_balloon: Checkout the blogs related to Testing on [my website](https://mfaisalkhatri.github.io) and [medium](https://medium.com/@iamfaisalkhatri) and [LambdaTest Blogs](https://www.lambdatest.com/blog/author/mfaisalkhatri/)
+## :thought_balloon: Checkout the blogs related to Testing on [my website](https://mfaisalkhatri.github.io) and [Medium blogs](https://medium.com/@iamfaisalkhatri) and [LambdaTest Blogs](https://www.lambdatest.com/blog/author/mfaisalkhatri/)
